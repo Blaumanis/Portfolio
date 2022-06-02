@@ -24,7 +24,6 @@
 
     .content {
         flex-basis: 60%;
-        padding: 0 1rem;
     }
 
     h2 {
@@ -60,6 +59,12 @@
 
         .box {
             display: none;
+        }
+    }
+
+    @media (max-width: 500px) {
+        img {
+            width: 100%;
         }
     }
 

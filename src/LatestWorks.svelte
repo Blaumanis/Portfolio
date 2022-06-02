@@ -147,6 +147,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 200px);
         }
+        .info {
+            width: 100%;
+        }
     }
 
 

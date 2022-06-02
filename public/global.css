@@ -9,7 +9,7 @@
 
 /* variables */
 :root {
-	--pale: hsl(45,100%,96%);
+	--pale: #fffaeb;
 	--paleGold: hsl(42,78%,60%);
 	--black: hsl(0,0%,13%);
 	--lightBlue: hsl(209,22%,49%);
@@ -28,6 +28,9 @@
 body {
     font-family: var(--OpenSans);
     font-family: var(--Roboto);
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 

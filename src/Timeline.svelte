@@ -27,6 +27,12 @@
 
     p {
         margin: 1rem 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    h3 {
+        padding-left: 1rem;
     }
 
     .timeline-container {
@@ -65,14 +71,8 @@
 
     @media (max-width: 768px) {
         .timeline {
-            width: 400px;
-            padding: 1.5rem;
-        }
-    }
-
-    @media (max-width: 468px) {
-        .timeline {
-            width: 300px;
+            width: 100%;
+            padding: 1.5rem 1rem;
         }
     }
 
