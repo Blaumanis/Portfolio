@@ -1,0 +1,142 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* variables */
+:root {
+	--pale: hsl(45,100%,96%);
+	--paleGold: hsl(42,78%,60%);
+	--black: hsl(0,0%,13%);
+	--lightBlue: hsl(209,22%,49%);
+    --darkBlue: hsl(209,61%,16%);
+    --brown: hsl(44,82%,17%);
+    --lightGray: hsl(206,33%,96%);
+    --beige: hsl(45,90%,88%);
+
+	--Roboto: 'Roboto', sans-serif;
+	--OpenSans: 'Open Sans', sans-serif;
+
+	--trans: all 0.3s linear;
+    --borderRadius: 0.5rem;
+	}
+
+body {
+    font-family: var(--OpenSans);
+    font-family: var(--Roboto);
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--Roboto);
+    color: var(--darkBlue);
+    line-height: .9;
+    text-transform: capitalize;
+    position: relative;
+    letter-spacing: .15rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: var(--OpenSans);
+    color: var(--lightBlue);
+    line-height: 1.6;
+}
+
+.btn-primary {
+    margin: 1rem 0 2rem 0;
+    display: block;
+    width: 160px;
+    padding: .5rem 1rem;
+    background-color: var(--paleGold);
+    color: var(--brown);
+    font-size: 1.15rem;
+    transition: var(--trans);
+    border: none;
+    border-radius: var(--borderRadius);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--OpenSans);
+}
+
+.btn-primary:hover {
+    background-color: hsla(42, 78%, 60%, 0.664);
+}
+
+.hero-img {
+    width: 300px;
+    border-radius: var(--borderRadius);
+    position: relative;
+    z-index: 10;
+}
+
+.box {
+    position: absolute;
+    width: 300px;
+    height: 390px;
+    bottom: -15px;
+    right: -15px;
+    border: 5px solid var(--paleGold);
+    border-radius: var(--borderRadius);
+}
+
+
+@media (max-width:768px) {
+    h2 {
+        font-size: 2rem !important;
+    }
+
+    p{
+        font-size: .95rem !important;
+    }
+
+    h1 {
+        font-size: 2.75rem !important;
+    }
+
+    h3 {
+        font-size: 1.25rem !important;
+    }
+
+    .btn-primary {
+        font-size: .95rem !important;
+    }
+}
+
+@media (max-width:320px) {
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    p{
+        font-size: .9rem !important;
+    }
+
+    h1 {
+        font-size: 2.25rem !important;
+    }
+
+    h3 {
+        font-size: 1rem !important;
+    }
+
+    .btn-primary {
+        font-size: .9rem !important;
+    }
+}
+
