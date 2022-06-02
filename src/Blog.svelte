@@ -27,10 +27,6 @@
     }
 
     .blog-container {
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center; */
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;

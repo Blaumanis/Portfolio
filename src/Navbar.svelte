@@ -1,7 +1,7 @@
 <script>
-  import {blur, fade} from 'svelte/transition';
-  let desktopMenu = true;
-  let mobileMenu = false;
+  import {slide} from 'svelte/transition';
+  import MobileMenu from './MobileMenu.svelte'
+  let open = false;
   window.addEventListener('scroll', fixNav)
 
 function fixNav() {
@@ -10,9 +10,13 @@ function fixNav() {
         nav.style.backgroundColor = "#fff"
     } else {
         nav.style.backgroundColor = "#fffaeb"
-    } 
-
+    }
 }
+
+function showMobileMenu() {
+    open = true;
+  }
+
 </script>
 
 <style>
@@ -88,13 +92,18 @@ function fixNav() {
 
 </style>
 
-<nav class="navbar">
+{#if open}
+  <MobileMenu {open}/>
+{:else}
+  <nav class="navbar" transition:slide>
     <h2 class="logo">Blau<span>Man</span></h2>
-    <ul class="links-container" in:blur out:fade>
+    <ul class="links-container">
         <li class="link-li"><a class="link" href="/">Home</a></li>
         <li class="link-li"><a class="link" href="/">About</a></li>
         <li class="link-li"><a class="link" href="/">Projects</a></li>
         <li class="link-li"><a class="link" href="/">Contact</a></li>
     </ul>
-    <button class="hamburger-btn" in:blur out:fade><i class="fa fa-bars"></i></button>
-</nav>
+    <button class="hamburger-btn" on:click={showMobileMenu}><i class="fa fa-bars"></i></button>
+  </nav>
+{/if}
+
