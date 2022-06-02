@@ -10,7 +10,7 @@ function fixNav() {
         nav.style.backgroundColor = "#fff"
     } else {
         nav.style.backgroundColor = "#fffaeb"
-    }
+    } 
 
 }
 </script>
@@ -73,11 +73,6 @@ function fixNav() {
   color: var(--paleGold);
   cursor: pointer;
 }
-
-.active {
-  background-color: #fff !important;
-}
-
 @media (max-width: 768px) {
   .navbar {
     background-color: #fff;
