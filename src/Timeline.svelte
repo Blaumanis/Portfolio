@@ -19,7 +19,7 @@
         width: 93px;
         height: 4px;
         position: absolute;
-        bottom: -20px;
+        bottom: -15px;
         left: 50%;
         transform: translateX(-50%);
         background-color: var(--paleGold);
@@ -42,10 +42,29 @@
 
     .timeline {
         width: 600px;
-        border-right: 3px dashed var(--paleGold);
         padding: 3rem 2rem; 
         position: relative;
-        border-radius: var(--borderRadius);
+        border-top: 2px dashed var(--paleGold);
+    }
+    .timeline:first-child {
+        border-top: 0;
+        border-top-right-radius: 0;
+    }
+    .timeline:nth-child(odd) {
+        border-right: 2px dashed var(--paleGold);
+        border-bottom-right-radius: var(--borderRadius);
+        border-top-right-radius: var(--borderRadius);
+        margin-left: var(--borderRadius);
+    }
+    .timeline:nth-child(even) {
+        border-left: 2px dashed var(--paleGold);
+        border-top-left-radius: var(--borderRadius);
+        border-bottom-left-radius: var(--borderRadius);
+        margin-right: var(--borderRadius);
+    }
+
+    .timeline:last-child {
+        border-bottom-left-radius: 0;
     }
 
     span {
@@ -58,13 +77,7 @@
         color: var(--darkBlue);
         border-radius: 50%;
     }
-
-    .second , .fourth, .sixth{
-        border: 3px dashed var(--paleGold);
-        border-right: none;
-    }
-
-    .second span, .fourth span, .sixth span {
+    .timeline:nth-child(even) span {
         left: -15px;
         right: inherit;
     }
@@ -81,12 +94,12 @@
 <section class="timeline-section">
     <h2>timeline</h2>
     <article class="timeline-container">
-        <div class="timeline first">
+        <div class="timeline">
             <h3>2020</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id iure voluptatem omnis sequi dolor numquam ipsa nemo suscipit, reprehenderit incidunt.</p>
             <span>1</span>
         </div>
-        <div class="timeline second">
+        <div class="timeline">
             <h3>2019</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id iure voluptatem omnis sequi dolor numquam ipsa nemo suscipit, reprehenderit incidunt.</p>
             <span>2</span>
@@ -96,7 +109,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id iure voluptatem omnis sequi dolor numquam ipsa nemo suscipit, reprehenderit incidunt.</p>
             <span>3</span>
         </div>
-        <div class="timeline fourth">
+        <div class="timeline">
             <h3>2017</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id iure voluptatem omnis sequi dolor numquam ipsa nemo suscipit, reprehenderit incidunt.</p>
             <span>4</span>
@@ -106,7 +119,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id iure voluptatem omnis sequi dolor numquam ipsa nemo suscipit, reprehenderit incidunt.</p>
             <span>5</span>
         </div>
-        <div class="timeline sixth">
+        <div class="timeline">
             <h3>2015</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id iure voluptatem omnis sequi dolor numquam ipsa nemo suscipit, reprehenderit incidunt.</p>
             <span>6</span>

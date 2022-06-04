@@ -35,7 +35,7 @@
         width: 93px;
         height: 4px;
         position: absolute;
-        top: -20px;
+        top: -15px;
         background-color: var(--paleGold);
     }
 

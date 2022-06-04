@@ -15,7 +15,8 @@
 	--lightBlue: hsl(209,22%,49%);
     --darkBlue: hsl(209,61%,16%);
     --brown: hsl(44,82%,17%);
-    --lightGray: hsl(206,33%,96%);
+    --lightGray: #f1f5f8;
+    --darkGray: #c4c7ca;
     --beige: hsl(45,90%,88%);
     --tomato: hsl(0, 67%, 44%);
 

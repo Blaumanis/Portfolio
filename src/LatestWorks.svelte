@@ -22,7 +22,7 @@
         width: 93px;
         height: 4px;
         position: absolute;
-        bottom: -20px;
+        bottom: -15px;
         left: 50%;
         transform: translateX(-50%);
         background-color: var(--paleGold);

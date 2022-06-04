@@ -1,4 +1,11 @@
 <script>
+    import {fade} from 'svelte/transition';
+    import ContactForm from './ContactForm.svelte'
+    let openForm = false;
+
+    function isFormOpen() {
+        openForm = true;
+    }
 
 </script>
 
@@ -32,7 +39,7 @@
         width: 93px;
         height: 4px;
         position: absolute;
-        bottom: -20px;
+        bottom: -15px;
         left: 50%;
         transform: translateX(-50%);
         background-color: var(--paleGold);
@@ -61,10 +68,14 @@
 </style>
 
 <section class="main-container">
-    <video src="/images/connect.mp4" autoplay muted loop poster="poster-img.avif"></video>
-    <article class="modal">
-        <h2>let's get in touch</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos possimus quaerat praesentium repellat ipsum? Vitae soluta eum numquam doloremque maiores dolores expedita recusandae voluptatibus, eveniet perspiciatis, odit adipisci fugit incidunt aliquam omnis facilis nam?</p>
-        <button class="btn-primary">contact me</button>
-    </article>
+{#if openForm}
+    <ContactForm {openForm}/>
+{:else}
+        <video src="/images/connect.mp4" autoplay muted loop poster="poster-img.avif" transition:fade></video>
+        <article class="modal">
+            <h2>let's get in touch</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos possimus quaerat praesentium repellat ipsum? Vitae soluta eum numquam doloremque maiores dolores expedita recusandae voluptatibus, eveniet perspiciatis, odit adipisci fugit incidunt aliquam omnis facilis nam?</p>
+            <button class="btn-primary" on:click={isFormOpen}>contact me</button>
+        </article>
+{/if}
 </section>

@@ -22,7 +22,7 @@ function hideMobileMenu() {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1000;
+        z-index: 10000;
     }
 
     .links-container {
@@ -73,6 +73,11 @@ function hideMobileMenu() {
         right: 2rem;
         font-size: 3rem;
         color: var(--tomato);
+        transition: var(--trans);
+    }
+
+    .close:hover {
+        transform: rotate(180deg);
     }
 
 
