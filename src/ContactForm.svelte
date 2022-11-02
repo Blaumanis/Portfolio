@@ -7,8 +7,6 @@
 		openForm = false;
 	}
 
-
-
 </script>
 
 <style>

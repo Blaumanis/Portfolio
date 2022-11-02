@@ -17,6 +17,9 @@ function showMobileMenu() {
     open = true;
   }
 
+	import {Router, Route, Link} from 'svelte-routing';
+
+
 </script>
 
 <style>
@@ -106,4 +109,3 @@ function showMobileMenu() {
     <button class="hamburger-btn" on:click={showMobileMenu}><i class="fa fa-bars"></i></button>
   </nav>
 {/if}
-

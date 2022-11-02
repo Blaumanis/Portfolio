@@ -8,6 +8,10 @@
 	import Timeline from './Timeline.svelte';
 	import Blog	from './Blog.svelte'
 	import Footer from "./Footer.svelte";
+
+	// router
+	// import {Router, Route, Link} from 'svelte-routing';
+
 </script>
 
 <style>

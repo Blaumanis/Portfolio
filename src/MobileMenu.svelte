@@ -13,7 +13,7 @@ function hideMobileMenu() {
     .mobile-menu {
         height: 100vh;
         width: 100vw;
-        background-color: var(--lightGray);
+        background-color: rgba(37,43,70,.918);
         display: flex;
         flex-direction: column;
         gap: 4rem;

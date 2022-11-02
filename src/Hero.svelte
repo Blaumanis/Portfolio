@@ -72,7 +72,7 @@
 <Navbar />
 <main class="hero">
     <section class="content">
-        <h1>I'm Alberts</h1>
+        <h1>I'm Developer</h1>
         <p>Freelance Web & Mobile UI/UX Designer</p>
         <button class="btn-primary">hire me</button>
         <div class="social-icons">
