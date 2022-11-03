@@ -10,7 +10,7 @@
 - CSS3
 - Flexbox
 - CSS Grid
-- [Svelte](https://svelte.dev/) - JS library
+- [Svelte](https://svelte.dev/) - JS framework
 
 ### Things implemented
 
