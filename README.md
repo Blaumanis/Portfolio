@@ -1,5 +1,9 @@
 # Single page portfolio project built with Svelte framework
 
+### Screenshot
+
+![](portfolio.png)
+
 ### Links
 
 - [Live Site URL](https://svelteportfolio.netlify.app/)
